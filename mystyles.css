@@ -1,0 +1,98 @@
+#container {
+    display: flex;
+    align-items: flex-end; /* Align bars to the bottom */
+    width: 100%;
+    height: 700px;
+    border: 1px solid black;
+}
+
+.bar {
+    width: 50px;
+    margin: 2px;
+    background-color: cadetblue;
+    transition: all 0.5s ease; /* Smooth transition for sorting */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+}
+input[type=number],select{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    color: cadetblue;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: solid 2px;
+
+
+}
+#showcon{
+
+    height: 50px;
+    color: cadetblue;
+    
+
+    font-size: x-large;
+
+}
+/* Hide the default checkbox */
+input[type=checkbox] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    
+    border-radius: 4px;
+    border: 2px solid cadetblue;;
+    cursor: pointer;
+    position: relative;
+    top: 7px;
+  
+}
+
+/* Change color when checked */
+input[type=checkbox]:checked {
+    background-color: rgb(47, 99, 101);
+}
+
+select{
+    width: 200px;
+    
+}
+#submitbut{
+    border-radius: 15px;
+    border: solid 2px;
+    font-size: large;
+    background-color: cadetblue;
+    color: white;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    padding: auto;
+    cursor: pointer;
+}
+#submitbut:hover{
+    background-color: rgb(47, 99, 101);
+    color: white;
+}
+
+header{
+    text-align: center;
+    color: burlywood;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove the arrows */
+    margin: 0; /* Remove default margin */
+}
+input::placeholder{
+    color: cadetblue;
+}
+.bar span{
+    display: block;
+    color: white;
+    text-align: center;
+    margin: auto;
+}

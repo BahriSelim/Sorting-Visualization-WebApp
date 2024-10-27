@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyles.css">
+</head>
+<body>
+    <header>
+        <form action="" method="get">
+            <div><span id="showcon"><label for="shownb">show numbers <input type="checkbox" id="shownumber" name="shownb"> </label></span>
+                <input type="number" placeholder="Min" id="min">
+                <input type="number" placeholder="Max" id="max">
+                <input type="number" placeholder="Count" id="count">
+                <select name="s" id="s">
+                    <option value="">select an algorithm</option>
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                </select>
+                <input type="button" value="Submit" onclick="main()" id="submitbut">
+                <input type="button" value="Randomise" onclick="randomise()" id="submitbut">
+                <input type="button" value="Sort" onclick="sort()" id="submitbut">
+            </div>
+            
+            
+        </form>
+    </header>
+    <div id="container">
+    </div>
+    <script src="control.js"></script>
+</body>
+</html>
